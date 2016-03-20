@@ -42,7 +42,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-
+\sloppy
 %\author{Priyanto Tamami}
 %\title{BUKU PETUNJUK OPERASIONAL SISTEM INFORMASI GEOGRAFIS UNTUK PBB-P2 DENGAN MAPINFO VERSI 8.0}
 %\date{22 Desember 2015}
@@ -89,8 +89,17 @@ Priyanto Tamami, S.Kom.
 
 \section{SASARAN DAN BATASAN SISTEM}
 
+Sasaran dan batasan dari sistem yang akan dibangun adalah yang pertama tentu saja menggantikan pola pencatatan manual yang masih menggunakan Microsoft Office Excel, dengan aplikasi data \textit{entry} yang terintegrasi dengan basis data Sistem Informasi Manajemen Objek Pajak (SISMIOP) yang dilakukan untuk mengelola data objek dan subjek Pajak Bumi dan Bangunan Perdesaan dan Perkotaan (PBB-P2), sehingga nantinya pada saat \textit{entry} data dapat diketahui apakah Nomor Objek Pajak (NOP) yang akan dilakukan verifikasi Bea Perolehan Hak atas Tanah dan Bangunan (BPHTB) sudah melunasi PBB-P2 terhutang atau belum.
+
+Sistem ini pun nantinya akan menampilkan informasi statistik jenis pelayanan BPHTB yang telah diterima, dan berapa jumlah berkas pengajuan pelayanan BPHTB yang sudah selesai.
+
+Sistem pun akan dibuka untuk akses bagi wajib pajak atau kuasanya, namun hanya untuk pemberitahuan status berkas apakah sudah selesai, atau tertunda karena beberapa hal seperti perlunya pemeriksaan lapangan atau adanya kekurangan kelengkapan berkas yang harus diserahkan.
+
 
 \section{ARSITEKTUR SISTEM}
+
+Arsitektur sistem akan terbagi menjadi 2 (dua) bagian, yaitu arsitektur basis data tentunya akan menggambarkan struktur tabel beserta relasinya. Yang kedua yaitu arsitektur sistem dimana disana akan tergambarkan bagaimana desain antar kelas berhubung, bagaimana tampilan akan berkomunikasi dengan lapisan kode di belakangnya, dan bagaimana kode Java nantinya berkomunikasi dengan basis data.
+
 
 
 \section{DESKRIPSI SUB SISTEM}
