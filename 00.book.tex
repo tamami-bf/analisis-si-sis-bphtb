@@ -98,12 +98,27 @@ Sistem pun akan dibuka untuk akses bagi wajib pajak atau kuasanya, namun hanya u
 
 \section{ARSITEKTUR SISTEM}
 
-Arsitektur sistem akan terbagi menjadi 2 (dua) bagian, yaitu arsitektur basis data tentunya akan menggambarkan struktur tabel beserta relasinya. Yang kedua yaitu arsitektur sistem dimana disana akan tergambarkan bagaimana desain antar kelas berhubung, bagaimana tampilan akan berkomunikasi dengan lapisan kode di belakangnya, dan bagaimana kode Java nantinya berkomunikasi dengan basis data.
+Seperti membangun sebuah gedung atau bangunan, agar berdiri kokoh dan memudahkan dalam pemeliharaan maka diperlukan sebuah arsitektur, sedangkan pada pembuatan sebuah sistem aplikasi maka diperlukan sebuah arsitektur sistem aplikasi yang tujuannya pun agar kokoh dalam artian stabil dengan sedikit permasalahan yang muncul, dan memberikan kemudahan pada saat pemeliharaan atau penambahan fasilitas pada sistem aplikasi yang sudah jadi.
 
+Arsitektur sistem akan terbagi menjadi 3 (tiga) bagian, yaitu :
 
+\begin{enumerate}[a.] 
+\item Bagian Basis Data
+
+\item Bagian Logika Aplikasi
+
+\item Bagian Tampilan Aplikasi
+\end{enumerate}
 
 \section{DESKRIPSI SUB SISTEM}
 
+\subsection{Bagian Basis Data}
+
+Pada bagian ini akan terdapat beberapa tabel baik dari sisi aplikasi SISMIOP maupun dari aplikasi BPHTB yang akan dibangun nantinya, beberapa tabel yang digunakan untuk menyimpan data-data SISMIOP hanya digunakan sebagai bahan pendukung pada data-data transaksi BPHTB. Sedangkan simpanan utama untuk sistem BPHTB ini nantinya akan dibangun dari awal menggunakan basis data Postgresql.
+
+\subsection{Bagian Logika Aplikasi}
+
+Pada bagian ini nantinya akan terdiri dari 
 
 \section{PERTIMBANGAN KHUSUS KINERJA SISTEM}
 
