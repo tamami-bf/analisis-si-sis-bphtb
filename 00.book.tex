@@ -128,10 +128,43 @@ Istilah aslinya biasa disebut dengan \textit{User Interface}, bagian ini yang na
 
 \section{PERTIMBANGAN KHUSUS KINERJA SISTEM}
 
+Karena sistem datanya terpusat, yaitu tersimpan pada server basis data Postgresql, maka perawatan atau pemeliharaan mutlak dilakukan pada sisi server basis data yang diakibatkan dari peningkatan jumlah data yang selalu bertambah dari sisi ukuran dari hari ke hari.
 
+Biasanya akan dilakukan pembersihan terhadap \textit{file log}, yaitu \textit{file} yang digunakan oleh sistem basis data postgresql untuk mencatatkan kegiatan atau aktivitas yang telah dilakukannya selama beroperasi melayani permintaan data. Pembersihan ini dilakukan secara rutin karena transaksi yang terjadi pun rutin dilakukan harian.
+
+Selain server basis data, server aplikasi web pun perlu mendapatkan perhatian pada sisi perawatan atau pemeliharaan, dimana server aplikasi web pun memiliki \textit{file log} tersendiri yang perlu dibersihkan secara rutin karena menyimpan catatan transaksi antara komputer \textit{client} dan server.
+
+Hal lain yang perlu dilakukan sebagai langkah pengamanan data yaitu dilakukannya duplikasi data (\textit{backup data}) sehingga apabila terjadi hal-hal yang tidak diinginkan, data dapat langsung dikembalikan atau dipulihkan (\textit{recovery}). Ini pun sebaiknya dilakukan secara rutin, sebaiknya dalam periode harian.
 
 \section{HASIL PEMODELAN}
 
+Hasil pemodelan untuk sistem informasi BPHTB ini nantinya akan dibagi menjadi beberapa diagram mendasar pada beberapa bagian dari arsitektur sistem, berikut rincian mengenai hasil pemodelan tersebut :
+
+\subsection{Bagian Basis Data}
+
+\subsection{Bagian Logika Aplikasi}
+
+Ada beberapa pemodelan logika aplikasi di dunia teknologi informasi, jika pengembangan dilakukan dengan bahasa pemrograman terstruktur, maka akan menggunakan \textit{flowchart} sebagai alat untuk pemodelan, karena yang akan digunakan sekarang adalah bahasa pemrograman Java yang menggunakan metodologi orientasi objek, maka digunakan Unified Modeling Language (UML) yang akan menggambarkan struktur sistem dari awal sampai akhir. Berikut adalah pemodelan atau diagram yang menggambarkan bagaimana sistem informasi BPHTB bekerja.
+
+\subsubsection{Diagram \textit{Use Case}}
+
+\subsubsection{Diagram \textit{Class}}
+
+\subsubsection{Diagram \textit{Package}}
+
+\subsubsection{Diagram \textit{Component}}
+
+\subsubsection{Diagram \textit{Deployment}}
+
+\subsubsection{Diagram \textit{Communication}}
+
+% liat disini -> http://www.uml-diagrams.org/communication-diagrams-examples.html
+
+\subsubsection{Diagram \textit{Activity}}
+
+\subsubsection{Diagram \textit{Sequence}}
+
+\subsection{Bagian Tampilan Aplikasi}
 
 \section{BIAYA DAN JADWAL PENGEMBANGAN}
 
